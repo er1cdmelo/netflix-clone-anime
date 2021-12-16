@@ -1,0 +1,209 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+
+/* colors */
+
+:root{
+    --verde: #35FF69;
+    --branco: #FBFBFB;
+    --preto: #191b1b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preto);
+    color: var(--branco);
+    cursor: url(/img/cursor.png);
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.title{
+    font-family: 'Oswald', sans-serif;
+    color: var(--verde);
+    letter-spacing: 5px;
+    font-size: 40px;    
+    margin-left: 10px;
+}
+
+nav a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: var(--verde);
+    font-weight: 400;
+    margin-right: 2vh;
+}
+
+nav a:hover{
+    color: #ddd7d7;
+}
+
+main{
+    font-family:'Poppins', sans-serif ;
+    margin-bottom: 10px;
+}
+
+
+/* filme principal */
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .80), rgba(0, 0, 0, 0.50)100%), url(/img/cover-principal.jpg);
+    background-position:center;
+    background-size: cover;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container h6{
+    position: relative;
+    top: 15%;
+    font-size: 15px;
+    color: var(--verde);
+}
+
+.filme-principal .description{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 85%;
+    width: 80%;
+}
+
+.filme-principal .container{
+    margin-left: 1%;
+    width: 80%;
+}
+
+.title-movie{
+    font-size: 200%;
+    max-width: 90%;
+    margin-top: 8%;
+}
+
+.btn{
+
+    border: none;
+    border-radius: 5px;
+    background-color: #191b1ba6;
+    color: var(--branco);
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-right: 30px;
+    padding: 15px 30px;
+    transition: .3s ease-out;
+}
+
+.btn:hover{
+    color: #191b1be3;
+    background-color: var(--branco);
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.carousel-series h2{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.box-series{
+    height: 90%;
+    width: 90%;
+    display: block;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.box-series:hover{
+    filter: brightness(60%);
+}
+
+.item{
+    text-align: center;
+}
+
+.item h3{
+    font-family: 'Poppins';
+}
+
+
+/*responsive*/
+
+@media screen and (max-width:700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container h6{
+        position: relative;
+        top: 5%;
+
+    }
+
+    .btn{
+        margin-top: 5px;
+        padding: 0;
+        width: 185px;
+        height: 50px;
+    }
+
+    .title-movie{
+        font-size: 150%;
+    }
+
+    .filme-principal .description{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 85%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:640px){
+    .btn{
+        width: 160px;
+        height: 40px;
+        margin: 0;
+    }
+
+    .container h6{
+        margin: 0;
+    }
+
+    .filme-principal .description{
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 85%;
+        width: 95%;
+    }
+
+    .filme-principal .container{
+        margin-left: 1%;
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .filme-principal .description{
+        width: 50%;
+    }
+}

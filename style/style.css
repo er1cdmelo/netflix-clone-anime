@@ -210,6 +210,27 @@ footer{
     }
 }
 
+@media screen and (max-width:600px){
+    .container h6{
+        display: block;
+        font-size: 12px;
+    }
+
+    .title-movie{
+        font-size: 170%;
+    }
+
+    .filme-principal .description{
+        font-size: 10px
+    }
+
+    .btn{
+        font-size: 10px;
+        width: 125px;
+        
+    }
+}
+
 @media screen and (min-width: 1000px){
     .filme-principal .description{
         width: 50%;
